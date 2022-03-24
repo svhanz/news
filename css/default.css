@@ -68,3 +68,24 @@ h3,
 p {
 	margin: 0;
 }
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: none;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+	display: none;
+}
