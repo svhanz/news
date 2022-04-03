@@ -7,9 +7,22 @@ const choices = new Choices(choicesElem, {
   searchEnabled: false,
   itemSelectText: '',
 });
+const getdata = async (url) => {
+  const response = await fetch(url, {
+    headers: {
+      'X-Api-Key': API_KEY,
+    }
+  });
+  const data = await response.json();
 
-const loadNews = () => {
-  const data = getdata();
+  return data
+};
+
+const renderCard = (data) => {
+  console.log();
+}
+const loadNews = async () => {
+  const data = await getdata('https://newsapi.org/v2/top-headlines');
   renderCard(data);
 
 }
