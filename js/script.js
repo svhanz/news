@@ -19,7 +19,7 @@ const getdata = async (url) => {
 };
 
 const renderCard = (data) => {
-  console.log();
+  console.log(data);
 }
 
 const loadNews = async () => {
